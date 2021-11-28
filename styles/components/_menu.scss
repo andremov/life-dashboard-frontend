@@ -1,0 +1,23 @@
+
+.menu {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  border: 1px solid transparent;
+  transition: 0.1s border-color;
+  font-size: 0.75rem;
+
+  .card__body {
+    width: 60px;
+    grid-gap: 10px;
+    flex-direction: column;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    border-color: #ffffff;
+  }
+}

@@ -1,0 +1,51 @@
+
+button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  outline: none;
+  border: none;
+  border-radius: inherit;
+  cursor: pointer;
+
+}
+
+button.square-btn {
+  width: 100%;
+  aspect-ratio: 1;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s border-color;
+  grid-gap: 5px;
+
+  .svg-inline--fa {
+    width: 70%;
+    height: auto;
+  }
+
+  &:hover {
+    border-color: #ffffff75;
+  }
+}
+
+button.icon-btn {
+  height: 100%;
+  aspect-ratio: 1;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s border-color;
+  grid-gap: 5px;
+  flex: 1;
+
+  .svg-inline--fa {
+    width: 50px;
+    width: 70%;
+    height: auto;
+  }
+
+  &:hover {
+    border-color: #ffffff75;
+  }
+}
