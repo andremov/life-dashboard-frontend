@@ -8,10 +8,9 @@ button {
   border: none;
   border-radius: inherit;
   cursor: pointer;
-
 }
 
-button.square-btn {
+.square-btn {
   width: 100%;
   aspect-ratio: 1;
   flex-direction: column;
@@ -30,7 +29,7 @@ button.square-btn {
   }
 }
 
-button.icon-btn {
+.icon-btn {
   height: 100%;
   aspect-ratio: 1;
   justify-content: center;
@@ -40,12 +39,34 @@ button.icon-btn {
   flex: 1;
 
   .svg-inline--fa {
-    width: 50px;
     width: 70%;
     height: auto;
   }
 
   &:hover {
     border-color: #ffffff75;
+  }
+}
+
+.themed-btn {
+  background-color: #ffffff50;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  width: fit-content;
+
+  &__icon {
+    height: 20px;
+    aspect-ratio: 1;
+  }
+
+  &__label {
+    white-space: nowrap;
+  }
+
+  &:hover {
+    background-color: #ffffff90;
   }
 }

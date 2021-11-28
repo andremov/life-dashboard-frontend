@@ -1,10 +1,10 @@
 import React from 'react';
 import {MovableCard} from '../Cards';
 
-export function Music() {
+export function Music({visible, toggleCard}) {
 	return (
-		<MovableCard>
-			Hello world!
+		<MovableCard visible={visible} className={'music'} toggleCard={toggleCard}>
+			Tasks
 		</MovableCard>
 	);
 }

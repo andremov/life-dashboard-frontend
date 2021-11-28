@@ -1,0 +1,57 @@
+
+.spaces {
+  width: 200px;
+}
+
+.music {
+  width: 200px;
+}
+
+.tasks {
+  width: 200px;
+
+  .card__body {
+    flex-direction: column;
+    padding: 0 0.1rem;
+  }
+
+  .task-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    margin: 0.5rem 0 0;
+    cursor: pointer;
+
+    &.checked {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    &__check-box {
+      height: 21px;
+      aspect-ratio: 1;
+      border-radius: 5px;
+      padding: 0.1rem;
+      background-color: var(--clr);
+      color: var(--bkg);
+    }
+  }
+
+  .new-task-item {
+    margin-top: 0.5rem;
+
+    &__input {
+      padding: 0.5rem;
+      width: 100%;
+    }
+
+    &__button {
+      margin: 0.5rem auto;
+    }
+  }
+}
+
+.timer {
+  width: 200px;
+}

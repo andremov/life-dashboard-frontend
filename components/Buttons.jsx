@@ -1,14 +1,20 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
-export const SquareButton = ({icon, label, onClick}) =>
-	<button className={'square-btn'} onClick={onClick}>
-		<FontAwesomeIcon icon={icon} />
-		<div className={'label'}>{label}</div>
+export const SquareButton = ({icon, label, onClick, className=''}) =>
+	<button className={`square-btn ${className}`} onClick={onClick}>
+		<FontAwesomeIcon className={'square-btn__icon'}  icon={icon} />
+		<div className={'square-btn__label'}>{label}</div>
 	</button>
 
 
-export const IconButton = ({icon, onClick}) =>
-	<button className={'icon-btn'} onClick={onClick}>
-		<FontAwesomeIcon icon={icon} />
+export const IconButton = ({icon, onClick, className=''}) =>
+	<button className={`icon-btn ${className}`} onClick={onClick}>
+		<FontAwesomeIcon className={'icon-btn__icon'} icon={icon} />
+	</button>
+
+export const ThemedButton = ({icon, label, onClick, className=''}) =>
+	<button className={`themed-btn ${className}`} onClick={onClick}>
+		{!!icon && <FontAwesomeIcon className={'themed-btn__icon'} icon={icon} />}
+		{!!label && <div className={'themed-btn__label'}>{label}</div>}
 	</button>
