@@ -53,5 +53,59 @@
 }
 
 .timer {
-  width: 200px;
+  width: 400px;
+  height: 150px;
+
+  .card__body {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  &__top {
+    width: 100%;
+    flex: 3;
+    display: flex;
+    align-items: center;
+  }
+
+  &__start {
+    flex: 2;
+
+    > button {
+      width: 100%;
+    }
+  }
+
+  &__reset, &__start {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__display {
+    flex: 3;
+    font-size: 4rem;
+  }
+
+  &__bottom {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    grid-gap: 10px;
+
+  }
+
+  &__reset {
+    flex: 1;
+
+    > button {
+      height: 30px;
+
+      svg {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
 }

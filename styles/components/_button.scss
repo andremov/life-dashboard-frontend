@@ -38,10 +38,10 @@ button {
   grid-gap: 5px;
   flex: 1;
 
-  .svg-inline--fa {
-    width: 70%;
-    height: auto;
-  }
+  //.svg-inline--fa {
+  //  width: 70%;
+  //  height: auto;
+  //}
 
   &:hover {
     border-color: #ffffff75;
@@ -50,10 +50,12 @@ button {
 
 .themed-btn {
   background-color: #ffffff50;
+
   padding: 0.5rem 1rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
+  justify-content: center;
   grid-gap: 10px;
   width: fit-content;
 
